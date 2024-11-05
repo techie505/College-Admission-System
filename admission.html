@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Apply Here</h1>
+        <h3>Fill out the following details to take admission in this college</h3>
+    </header>
+
+
+
+    <section id="apply">
+        <h2>Basic Information</h2>
+        <form class="applicationForm" >
+            <label class="label" for="studentName">Full Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label class="label" for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label class="label" for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" required>
+
+            <p class="font-bold">Gender:</p>
+            <div class="genderSection flex">
+                <div class="gender" class="flex">
+                    <input type="radio" id="male" name="gender" required value="Male">
+                    <label for="male" class="font-bold">Male</label>
+                </div>
+                <div class="gender" class="flex">
+                    <input type="radio" id="female" name="gender" required value="Male">
+                    <label for="female" class="font-bold">Female</label>
+                </div>
+                <div class="gender" class="flex">
+                    <input type="radio" id="3rdgen" name="gender" required value="Male">
+                    <label for="3rdgen" class="font-bold">Third Gender</label>
+                </div>
+
+            </div>
+
+            <label class="label" for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label class="label" for="address1">Current Address:</label>
+            <input type="text" id="address1" name="address1" required>
+
+            <label class="label" for="address2">Permanant Address:</label>
+            <input type="text" id="address2" name="address2" required>
+
+            
+
+            <label class="label" for="state">Choose Your State:</label>
+            <select name="state" id="state" required>
+                <option value="" selected disabled>Select State</option>
+                <option value="andhra_pradesh">Andhra Pradesh</option>
+                <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal_pradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya_pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamil_nadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttar_pradesh">Uttar Pradesh</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="west_bengal">West Bengal</option>
+            </select>
+
+
+            <br>
+
+            <h2>Academic Details</h2>
+
+            <label class="label" for="school10">Name of Secondary School:</label>
+            <input type="text" id="school10" name="school10" required>
+
+            <label class="label" for="percent10">Class 10th Percentage:</label>
+            <input type="text" id="percent10" name="percent10" required>
+
+            <label class="label" for="board10">Class 10th Board/University:</label>
+            <input type="text" id="board10" name="board10" required>
+
+            <label class="label" for="grade10">Upload Class 10th Marksheet (.pdf):</label>
+            <input type="file" id="grade10" name="grade10" required>
+
+            <br>
+
+            <label class="label" for="school12">Name of Higher Secondary School:</label>
+            <input type="text" id="school12" name="school12" required>
+
+            <label class="label" for="percent12">Class 12th Percentage:</label>
+            <input type="text" id="percent12" name="percent12" required>
+
+            <label class="label" for="board12">Class 12th Board/University:</label>
+            <input type="text" id="board12" name="board12" required>
+
+            <label class="label" for="grade12">Upload Class 12th Marksheet (.pdf):</label>
+            <input type="file" id="grade12" name="grade12" required>
+
+            <br>
+
+            <label class="label" for="lastExam">Last Qualified Exam (Competitive):</label>
+            <input type="text" id="lastExam" name="lastExam" required>
+
+            <label class="label" for="lastExamPercent">Percentage of Last Qualified Exam (Competitive):</label>
+            <input type="text" id="lastExamPercent" name="lastExamPercent" required>
+
+            <label class="label" for="lastExamGrade">Upload Rank Card of Last Qualified Exam (.pdf):</label>
+            <input type="file" id="lastExamGrade" name="lastExamGrade" required>
+            <br>
+            <h2>Course Selection</h2>
+
+            <label class="label" for="course">Choose Preffered Course:</label>
+            <select name="course" id="course">
+                <option value="" selected disabled>Select Course</option>
+                <option value="cse">Computer Science Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="ece">Electronics and Communication Engineering</option>
+                <option value="electrical">Electrical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="mechanical">Mechanical Engineering</option>
+                <option value="chemical">Chemical Engineering</option>
+                <option value="aerospace">Aerospace Engineering</option>
+            </select>
+
+            <a href="#" class="button">Submit Fees</a>
+            <input class="button" type="submit" value="Submit Application">
+
+        </form>
+        <div id="responseMessage"></div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Contact Us</h2>
+            <p>Email: admissions@college.edu</p>
+            <p>Phone: 123456789</p>
+            <p>Address: 123 Beleghata, Kolkata-12345</p>
+        </div>
+        <div class="footer-searches">
+            <h2>Relevant Searches</h2>
+            <ul>
+                <li><a href="#admission">Admission Requirements</a></li>
+                <li><a href="#programs">Available Programs</a></li>
+                <li><a href="#scholarships">Scholarship Opportunities</a></li>
+                <li><a href="#tuition">Tuition Fees</a></li>
+                <li><a href="#campus-life">Campus Life</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 College Admission System. All Rights Reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
